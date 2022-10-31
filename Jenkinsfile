@@ -26,7 +26,7 @@ pipeline{
 stage('Deploy') {
  steps {
  sh '''
- oc project -doflevgreetings
+ oc project doflev-greetings
  oc start-build greeting-service --follow --wait
  '''
  }
